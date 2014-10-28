@@ -64,6 +64,7 @@ private:
     ScopedPointer<ComboBox> triggerNoteNumComboBox;
     ScopedPointer<Label> triggerNoteLabel;
 
+
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DuckEditor)
 };

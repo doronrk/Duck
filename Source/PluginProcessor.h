@@ -70,7 +70,12 @@ public:
 
 private:
     //==============================================================================
+    
+    // this is the midi note number that will trigger the ducking event
     int triggerNoteNum;
+    // this is the gain factor applied to the current sample
+    double gainFactor;
+    
     void handleMidiEvent(AudioSampleBuffer& buffer, MidiMessage m, int midiEventPos);
     void beginDuck(AudioSampleBuffer& buffer, MidiMessage m, int midiEventPos);
     void endDuck(AudioSampleBuffer& buffer, MidiMessage m, int midiEventPos);

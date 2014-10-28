@@ -13,7 +13,9 @@
 
 
 //==============================================================================
-DuckProcessor::DuckProcessor()
+DuckProcessor::DuckProcessor():
+    triggerNoteNum(-1),
+    gainFactor(1.0)
 {
 }
 
@@ -138,6 +140,8 @@ void DuckProcessor::releaseResources()
 
 void DuckProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& midiMessages)
 {
+    std::cout << "gainFactor = " << String(gainFactor) << "\n";
+    
     // clear extra channels
     for (int i = getNumInputChannels(); i < getNumOutputChannels(); ++i)
         buffer.clear (i, 0, buffer.getNumSamples());
@@ -146,7 +150,7 @@ void DuckProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& midiMes
     for (int channel = 0; channel < getNumInputChannels(); ++channel)
     {
         float* channelData = buffer.getWritePointer (channel);
-
+        
         // ..do something to the data...
     }
     
@@ -192,12 +196,12 @@ void DuckProcessor::handleMidiEvent(AudioSampleBuffer& buffer, MidiMessage m, in
 
 void DuckProcessor::beginDuck(AudioSampleBuffer& buffer, MidiMessage m, int midiEventPos)
 {
-    
+    gainFactor = 0.0;
 }
 
 void DuckProcessor::endDuck(AudioSampleBuffer& buffer, MidiMessage m, int midiEventPos)
 {
-    
+    gainFactor = 1.0;
 }
 
 

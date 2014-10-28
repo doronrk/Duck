@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DA0F6F58-07C9-480B-A5CA-E27B6F06000D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Duck</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>51AC8DE5BF4B2A064D80CBE8371D67B2304EFB3B</key>
+		<string>https://github.com/doronrk/Duck.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Builds/MacOSX/Duck.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>51AC8DE5BF4B2A064D80CBE8371D67B2304EFB3B</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/doronrk/Duck.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>51AC8DE5BF4B2A064D80CBE8371D67B2304EFB3B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>51AC8DE5BF4B2A064D80CBE8371D67B2304EFB3B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Duck</string>
+		</dict>
+	</array>
+</dict>
+</plist>
